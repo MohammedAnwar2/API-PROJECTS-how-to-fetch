@@ -72,6 +72,8 @@ class _ApiPageState extends State<ApiPage> {
   }
 }
 ```
+# api services
+```dart
 Future<List<Post>> getResquest() async {
   try {
     Uri url = Uri.parse("https://jsonplaceholder.typicode.com/posts");
@@ -93,7 +95,9 @@ Future<List<Post>> getResquest() async {
     throw Exception(e);
   }
 }
-
+```
+# api model
+```dart
 class Post {
   final int id;
   final String title;
@@ -104,3 +108,4 @@ class Post {
     return Post(id: json['id'], body: json['body'], title: json['title']);
   }
 }
+```
