@@ -1,5 +1,5 @@
-// ignore_for_file: unused_local_variable
-
+# post app
+```dart
 import 'dart:convert';
 import 'dart:developer';
 import 'package:flutter/material.dart';
@@ -71,7 +71,7 @@ class _ApiPageState extends State<ApiPage> {
     );
   }
 }
-
+```
 Future<List<Post>> getResquest() async {
   try {
     Uri url = Uri.parse("https://jsonplaceholder.typicode.com/posts");
